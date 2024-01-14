@@ -6,10 +6,10 @@ local syaml = require("simpleyaml")
 -- fallback if no cmake-variants.[yaml|json] is found
 local DEFAULT_VARIANTS = { "Debug", "Release", "RelWithDebInfo", "MinSizeRel" }
 local DEFAULT_VARIANTS_VAL = {
-  { short = "Debug", long = "", kv = { buildType = "Debug" } },
-  { short = "Release", long = "", kv = { buildType = "Release" } },
-  { short = "RelWithDebInfo", long = "", kv = { buildType = "RelWithDebInfo" } },
-  { short = "MinSizeRel", long = "", kv = { buildType = "MinSizeRel" } },
+  { short = "Debug", long = "", kv = { buildType = "debug" } },
+  { short = "Release", long = "", kv = { buildType = "release" } },
+  { short = "RelWithDebInfo", long = "", kv = { buildType = "relwithdebinfo" } },
+  { short = "MinSizeRel", long = "", kv = { buildType = "minsizerel" } },
 }
 
 -- checks if there is a cmake-variants.[yaml|json] file and parses it to a Lua table
